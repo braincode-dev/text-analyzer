@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', 'MainController@index');
+
+Route::post('/text-analyze', 'MainController@analyzeText')->name('text-analyze');
+Route::post('/file-analyze', 'MainController@analyzeFile')->name('file-analyze');
+Route::get('/download/{type}/{id}', 'MainController@download')->name('download');

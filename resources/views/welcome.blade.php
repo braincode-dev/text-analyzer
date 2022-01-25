@@ -81,7 +81,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Text Analyzer
+                </div>
+
+                <div class="form-block">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Default file input example</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </form>
                 </div>
 
                 <div class="links">
